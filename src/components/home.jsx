@@ -74,6 +74,27 @@ function Home() {
             bed: 3,
             sqrt: 43
         }]
+
+    const newsData = [
+        {
+            image: "https://m.media-amazon.com/images/I/71hS5RlM-3L.jpg",
+            title: "Home prices Are finally Falling How Low will they go ?",
+            discription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, veritatis harum? Nostrum libero quo quibusdam facilis a deserunt. Fugit soluta eum provident. Accusantium, accusamus harum!",
+
+        },
+        {
+            image: "https://static.vecteezy.com/system/resources/previews/023/309/303/non_2x/ai-generative-exterior-of-modern-luxury-house-with-garden-and-beautiful-sky-photo.jpg",
+            title: "Home prices Are finally Falling How Low will they go ?",
+            discription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, veritatis harum? Nostrum libero quo quibusdam facilis a deserunt. Fugit soluta eum provident. Accusantium, accusamus harum!",
+
+        },
+        {
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8AxF6r1b_u5KLicYUArk26BrRQt08GgyUkNCD7j7BFAePvqxZUhGH11h_Rm03srfjtqs&usqp=CAU",
+            title: "Home prices Are finally Falling How Low will they go ?",
+            discription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, veritatis harum? Nostrum libero quo quibusdam facilis a deserunt. Fugit soluta eum provident. Accusantium, accusamus harum!",
+
+        },
+    ]
     return (<><div className="pt-12 flex justify-center md:gap-56 p-5">
         <div className="flex justify-center items-center">
             <p className="dancing-script md:text-5xl text-2xl font-bold text-blue-800">Where Dreams  Come Home</p>
@@ -314,6 +335,46 @@ function Home() {
                 </div>
             </div>
 
+            {/* Latest News */}
+
+            <div className="mt-20 p-5">
+            <p className="text-center font-bold playwrite-cu text-2xl">Our Latest News</p>
+                <div className="flex gap-3 md:flex-row flex-col mt-10">
+                    {newsData.map((item) => (
+                        <Card className="w-full max-w-[48rem] md:flex-row border-2">
+                            <CardHeader
+                                shadow={false}
+                                floated={false}
+                                className="m-0 md:w-2/5 shrink-0 md:rounded-r-none"
+                            >
+                                <img
+                                    src={item.image}
+                                    alt="card-image"
+                                    className="h-full w-full object-cover"
+                                />
+                            </CardHeader>
+                            <CardBody>
+                                <Typography variant="h4" color="blue-gray" className="mb-2">
+                                    {item.title}
+                                </Typography>
+                                <Typography color="gray" className="mb-8 font-normal">
+                                    {item.discription}
+                                </Typography>
+                                <Button>Read More</Button>
+                            </CardBody>
+                        </Card>
+                    ))}
+
+
+
+
+
+
+                </div>
+            </div>
+            <div>
+
+            </div>
         </div>
     </>)
 }
