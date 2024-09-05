@@ -4,6 +4,14 @@
 
 
 
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  
+}
+
 .playwrite-cu {
   font-family: "Playwrite CU", cursive;
   font-optical-sizing: auto;

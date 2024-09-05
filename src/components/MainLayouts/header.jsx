@@ -7,6 +7,7 @@ import {
   IconButton,
   Card,
 } from "@material-tailwind/react";
+import { NavLink } from "react-router-dom";
  
 export function Header() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -19,34 +20,36 @@ export function Header() {
   }, []);
  
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-normal hover:text-purple-800"
       >
-        <a href="#" className="flex items-center playwrite-cu">
+        <a href="#" className="flex items-center montserrat">
           Home
         </a>
       </Typography>
+      
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-normal hover:text-purple-800"
       >
-        <a href="#" className="flex items-center playwrite-cu">
+        <a href="#" className="flex items-center montserrat">
           Listing
         </a>
       </Typography>
+      
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-normal hover:text-purple-800"
       >
-        <a href="#" className="flex items-center playwrite-cu">
+        <a href="#" className="flex items-center montserrat">
           Properties
         </a>
       </Typography>
@@ -54,9 +57,9 @@ export function Header() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-normal hover:text-purple-800"
       >
-        <a href="#" className="flex items-center playwrite-cu">
+        <a href="#" className="flex items-center montserrat">
          Contact us
         </a>
       </Typography>
@@ -64,9 +67,9 @@ export function Header() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-normal hover:text-purple-800"
       >
-        <a href="#" className="flex items-center playwrite-cu">
+        <a href="#" className="flex items-center montserrat">
          About
         </a>
       </Typography>

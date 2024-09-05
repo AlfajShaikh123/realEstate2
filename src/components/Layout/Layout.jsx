@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom"
 import Home from "../home"
 import Footer from "../MainLayouts/footer"
 import { Header } from "../MainLayouts/header"
@@ -5,8 +6,8 @@ import { Header } from "../MainLayouts/header"
 function Layout() {
     return (<><div className="mt-5">
         <Header />
-        <Home/>
-        <Footer/>
+        <Outlet />
+        <Footer />
     </div></>)
 }
 
