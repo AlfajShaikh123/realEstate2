@@ -10,6 +10,7 @@ import { Rental } from './components/Rental Property/rentalProperty.jsx'
 import { Resale } from './components/Resale Properties/resaleProperties.jsx'
 import { Services } from './components/Services/services.jsx'
 import { AC } from './components/Services/Providers/ac.jsx'
+import { Painting } from './components/Services/Providers/painting.jsx'
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />}>
@@ -18,6 +19,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='resale' element={<Resale/>}/>
     <Route path='service' element={<Services/>}/>
     <Route path='/service/ac' element={<AC/>}/>
+    <Route path='/service/painting' element={<Painting/>}/>
   </Route>
 ))
 

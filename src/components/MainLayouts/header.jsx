@@ -21,6 +21,7 @@ export function Header() {
  
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
+      <NavLink to={''}>
       <Typography
         as="li"
         variant="small"
@@ -31,6 +32,7 @@ export function Header() {
           Home
         </a>
       </Typography>
+      </NavLink>
       
       <Typography
         as="li"

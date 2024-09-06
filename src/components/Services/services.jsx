@@ -5,7 +5,7 @@ export function Services() {
         {
             image: 'https://st4.depositphotos.com/1010613/23840/i/450/depositphotos_238406070-stock-photo-young-woman-looking-male-technician.jpg',
             title: 'Ac service',
-            navlink:'ac'
+            navlink: 'ac'
         },
         {
             image: 'https://media.istockphoto.com/id/1134524065/photo/industrial-pest-control.jpg?s=612x612&w=0&k=20&c=6crJWKW5ea9Ap1wEYJv0PcF57IO6v1sRD7B8gc8r848=',
@@ -29,7 +29,8 @@ export function Services() {
         },
         {
             image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgdNOlsFoej95xyN6AvXLdBxNM25RLVYUQFQ&s',
-            title: 'Painting Service'
+            title: 'Painting Service',
+            navlink: 'painting'
         },
         {
             image: 'https://5.imimg.com/data5/SELLER/Default/2024/3/395871659/RL/BP/EC/161911943/office-housekeeping-services-500x500.jpg',
@@ -59,11 +60,11 @@ export function Services() {
             <div className="grid md:grid-cols-4 space-y-5 mt-5   ">
                 {serviceData.map((item) => (
                     <NavLink to={item.navlink}>
-                    <div className="relative md:p-5 m-auto ">
-                        <img src={item.image} alt="" className="h-52 rounded-xl shadow-xl" />
-                        <div className="flex justify-center items-center">
-                        <p className="absolute bottom-0  bg-white montserrat p-2 shadow-xl text-sm ">{item.title}</p></div>
-                    </div>
+                        <div className="relative md:p-5 m-auto ">
+                            <img src={item.image} alt="" className="h-52 rounded-xl shadow-xl" />
+                            <div className="flex justify-center items-center">
+                                <p className="absolute bottom-0  bg-white montserrat p-2 shadow-xl text-sm ">{item.title}</p></div>
+                        </div>
                     </NavLink>
                 ))}
 

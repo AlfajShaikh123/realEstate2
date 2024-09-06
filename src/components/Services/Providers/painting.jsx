@@ -25,7 +25,7 @@ function StarIcon() {
         </svg>
     );
 }
-export function AC() {
+export function Painting() {
 
 
     const acData = [
