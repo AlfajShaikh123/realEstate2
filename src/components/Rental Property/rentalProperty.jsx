@@ -1,5 +1,6 @@
 import { Input } from "@material-tailwind/react";
 import React, { useState } from 'react';
+import { NavLink } from "react-router-dom";
 
 export function Rental() {
 
@@ -11,6 +12,7 @@ export function Rental() {
             contact: 747587854,
             price: 16000,
             km: "1.5 Km from konark vertue",
+            navLink:'rental-one',
 
             type: {
                 furnished: "unfurnished",
@@ -164,7 +166,7 @@ export function Rental() {
                 {filteredCards.length === 0 ? (
                     <p>No Data Found</p>
                 ) : (filteredCards.map((item, type) => (
-
+                    <NavLink to={item.navLink}>
                     <div className="md:flex gap-5 p-5 bg-gray-100 rounded-xl  shadow-xl border border-gray-300 md:w-[80%] m-auto">
                         <div className="space-y-3 ">
                             <div>
@@ -218,6 +220,7 @@ export function Rental() {
                             </div>
                         </div>
                     </div>
+                    </NavLink>
 
                 ))
                 )}

@@ -146,9 +146,9 @@ export function AC() {
                             onChange={handleSearch} />
                     </div>
                 </div>
-                <div className="mt-48 p-5 grid md:grid-cols-3 md:ms-20 cursor-pointer  gap-10">
+                <div className="mt-48 p-5 md:ps-20 md:pe-20 grid  cursor-pointer  gap-10">
                     {filteredCards.map((item, flow) => (
-                        <Card color="transparent" shadow={false} className="w-full max-w-[26rem] border p-2 shadow-xl transform transition-transform duration-300 md:hover:scale-110">
+                        <Card color="transparent" shadow={false} className=" md:max-w-[100rem] max-w-[36rem] border p-5 md:ps-10 md:pe-10 shadow-xl transform transition-transform duration-300 md:hover:scale-105">
                             <CardHeader
                                 color="transparent"
                                 floated={false}

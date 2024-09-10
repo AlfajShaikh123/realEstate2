@@ -11,15 +11,19 @@ import { Resale } from './components/Resale Properties/resaleProperties.jsx'
 import { Services } from './components/Services/services.jsx'
 import { AC } from './components/Services/Providers/ac.jsx'
 import { Painting } from './components/Services/Providers/painting.jsx'
+import { Rental_one } from './components/Rental Property/providers/rental-one.jsx'
+import { Post } from './components/Post/post.jsx'
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />}>
-    <Route path='' element={<Home/>}/>
-    <Route path='rental' element={<Rental/>}/>
-    <Route path='resale' element={<Resale/>}/>
-    <Route path='service' element={<Services/>}/>
-    <Route path='/service/ac' element={<AC/>}/>
-    <Route path='/service/painting' element={<Painting/>}/>
+    <Route path='' element={<Home />} />
+    <Route path='post' element={<Post/>}/>
+    <Route path='rental' element={<Rental />} />
+    <Route path='/rental/rental-one' element={<Rental_one/>}/>
+    <Route path='resale' element={<Resale />} />
+    <Route path='service' element={<Services />} />
+    <Route path='/service/ac' element={<AC />} />
+    <Route path='/service/painting' element={<Painting />} />
   </Route>
 ))
 
